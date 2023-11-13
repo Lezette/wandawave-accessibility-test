@@ -1,0 +1,39 @@
+:root {
+  --main-color: #58c9cf;
+  --secondary-color: #94bbe9;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow: visible;
+}
+
+.logo {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.landing-section {
+  background: var(--secondary-color);
+}
+
+.text-color {
+  color: var(--main-color);
+}
+
+.border-color {
+  border-color: var(--main-color);
+}
+
+.footer-style {
+  background: #edf0fc;
+}
+
+input:focus,
+a:focus,
+button:focus {
+  outline-width: 0px;
+}
+
+input::placeholder {
+  font-size: 12px;
+}

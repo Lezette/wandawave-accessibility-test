@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
+  <script src="https://kit.fontawesome.com/9726640135.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&amp;family=Montserrat:wght@300;400;500;700&amp;display=swap"
+    rel="stylesheet">
+
+  <title>Wandawave</title>
+</head>
+
+<body>
+  <div id="header" class="absolute top-0 inset-x-0 border-b border-white py-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <ul class="hidden md:flex gap-4 text-lg">
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <div class="logo uppercase text-xl md:2xl">Wandawave</div>
+
+      <ul class="hidden md:flex items-center gap-4 text-lg">
+        <li>
+          <a href="#">
+            <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z"
+                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z"
+                stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="#000000" />
+              <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#000000"
+                stroke-linecap="round" />
+            </svg></a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div id="menuBtn" class="md:hidden">
+        <i id="close" class="fa-solid fa-xmark text-3xl hidden"></i>
+        <i id="menuIcon" class="fa-solid fa-ellipsis-vertical text-3xl"></i>
+      </div>
+
+      <div id="menu" class="hidden absolute inset-0 top-24 bg-white flex flex-col items-center justify-between py-20">
+        <div class="flex flex-col gap-5 text-2xl">
+          <a href="#">Destinations</a>
+          <a href="#">About</a>
+        </div>
+        <ul class="flex gap-10">
+          <li><a href="#"><i class="fa-brands fa-instagram text-2xl" style="color: #0077cc;"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-envelope text-2xl" style="color: #0077cc;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="landing-section py-32 pt-44">
+      <div class="container mx-auto">
+        <div class="md:flex justify-between items-start mb-12">
+          <p class="text-3xl md:text-4xl leading-relaxed lg:5xl lg:leading-relaxed md:w-7/12 md:font mb-14">Documenting
+            the very best in Food and Travel Life.</p>
+          <a href="#" class="my-5 inline-block border border-white px-10 py-4">Explore</a>
+        </div>
+        <div class="flex gap-10 text-center">
+          <div class="w-6/12">
+            <img src="https://source.unsplash.com/CbfU9qh6KOY/400x300"
+              class="lg:w-10/12 inline-block mx-auto lg:object-cover" />
+            <p class="mt-4 font-light">Aug 17, 2023</p>
+            <p>Unusual AirBnB apartments I've seen</p>
+          </div>
+          <div class="w-6/12">
+            <img src="https://source.unsplash.com/kn_ANxnwCQ0/400x300"
+              class="lg:w-10/12 lg:object-cover inline-block mx-auto" />
+            <p class="mt-4 font-light">Jan 10, 2023</p>
+            <p>My top 10 favorite Nigerian meal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-20 container mx-auto lg:flex gap-8 justify-between">
+      <div>
+        <p class="text-color text-3xl lg:text-4xl mb-16">Travel Content</p>
+        <p class="font-light mb-10">Explore. Experience. Enjoy.</p>
+        <a href="#" class="inline-block border border-color text-color px-10 py-4 mb-10">Read more</a>
+      </div>
+      <div>
+        <div class="flex justify-end gap-3 text-2xl py-8 cursor-pointer">
+          <i class="fa-solid fa-chevron-right fa-rotate-180" style="color: #9da3af;"></i>
+          <i class="fa-solid fa-chevron-right" style="color: #323439;"></i>
+        </div>
+        <div class="flex flex-nowrap gap-3 overflow-visible">
+          <div>
+            <img src="https://source.unsplash.com/2Mb2zb-vlbA/300x450" class="w-full" />
+            <p class="mt-4 font-light">Aug 17, 2023</p>
+            <p>Explore Novi Sad</p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/6iSZzFMKQbs/300x450" class="w-full" />
+            <p class="mt-4 font-light">Sept 21, 2022</p>
+            <p>Best time to visit Mauritius</p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/9_uYzdZ3084/300x450" class="w-full" />
+            <p class="mt-4 font-light">Aug 17, 2023</p>
+            <p>Nigerian parties should be studied</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-20 container mx-auto lg:flex gap-8 justify-between">
+      <div>
+        <p class="text-color text-3xl lg:text-4xl mb-16">Food Content</p>
+        <p class="font-light mb-10">Savor the Moment, Taste the World.</p>
+        <a href="#" class="inline-block border border-color text-color px-10 py-4 mb-8">Read more</a>
+      </div>
+      <div>
+        <div class="flex justify-end gap-3 text-2xl py-8 cursor-pointer">
+          <i role="button" tabindex="1" class="fa-solid fa-chevron-right fa-rotate-180" style="color: #9da3af;"></i>
+          <i role="button" tabindex="2" class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex flex-nowrap gap-4 overflow-visible">
+          <div>
+            <img src="https://source.unsplash.com/_VRo59IsqLo/300x450" class="w-full lg:object-cover" />
+            <p class="mt-4 font-light">Aug 17, 2023</p>
+            <p>Nigerian food: Fried rice</p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/AAHdL8gp5b8/300x450" class="w-full lg:object-cover" />
+            <p class="mt-4 font-light">Sept 21, 2022</p>
+            <p>The best desserts I had in Serbia</p>
+          </div>
+          <div>
+            <img src="https://source.unsplash.com/FIGcCVQeGwE/300x450" class="w-full lg:object-cover" />
+            <p class="mt-4 font-light">Aug 17, 2023</p>
+            <p>All the local foods I had in Ghana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer" class="footer-style">
+    <div class="container mx-auto">
+      <div class="py-12">
+        <form>
+          <input placeholder="Subscribe to my newsletter"
+            class="bg-transparent border-2 border-white py-2 px-3 inline-block w-2/12 placeholder:font-sm" />
+          <button type="submit" class="landing-section px-10 py-2 inline-block rounded-lg ml-6 text-lg">Submit</button>
+        </form>
+      </div>
+      <div class="flex justify-center gap-1 text-center pb-3">
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z"
+            stroke="#1C274C" stroke-width="1.5" />
+          <path
+            d="M14 15.6672C13.475 15.8812 12.8952 16 12.2857 16C9.91878 16 8 14.2091 8 12C8 9.79086 9.91878 8 12.2857 8C12.8952 8 13.475 8.11876 14 8.33283"
+            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+          <!--     this svg doesn't have a title   -->
+        </svg>
+        <p>Wandawave 2023</p>
+        <div class="text-center pb-4">This page is for accessbibility testing</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
