@@ -28,11 +28,24 @@ body {
   background: #edf0fc;
 }
 
+a,
+button {
+  display: inline-block;
+}
+
+a:hover {
+  border: 1px dashed rgb(99 102 241);
+}
+
 input:focus,
 a:focus,
 button:focus {
   outline-width: 0px;
+  display: inline-block;
+  border: 2px solid rgb(99 102 241);
 }
+
+
 
 input::placeholder {
   font-size: 12px;
